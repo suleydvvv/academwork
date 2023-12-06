@@ -1,0 +1,17 @@
+@use "./vars" as v;
+
+$text-color-light: v.$black;
+$text-color-dark: v.$white;
+
+$background-color-dark: v.$blue-light;
+$background-color-light: v.$white;
+
+.app_dark{
+    background-color: $background-color-dark;
+    color: $text-color-dark;
+}
+
+.app_light{
+    background-color: $background-color-light;
+    color: $text-color-light;
+}

@@ -1,0 +1,118 @@
+@use "../../../utils/style/vars" as v;
+
+.container{
+    width: 100%;
+    height: fit-content;
+    padding-top: 130px;
+
+    .content{
+        width: 1200px;
+        margin: 0 auto;
+
+        font-family: "Montserrat";
+
+        .title{
+            width: fit-content;
+            h3{
+                font-size: 12px;
+                font-weight: 500;
+                color: v.$grey-text;
+                text-transform: uppercase;
+            }
+            h1{
+                font-size: 40px;
+                font-weight: 800;
+            }
+            .line{
+                width: 40px;
+                height: 3px;
+                background-color: v.$yellow;
+            }
+        }
+
+        .info_box{
+            width: 100%;
+            height: fit-content;
+
+            .paragraphs{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+            }
+        }
+
+        .bottom_box{
+            margin-top: 20px;
+            margin-bottom: -24px;
+            display: flex;
+            justify-content: space-around;
+
+            .garant{
+                margin-top: 50px;
+                text-align: center;
+                width: 400px;
+                height: fit-content;
+
+                h3{
+                    font-size: 14;
+                    font-weight: 600;
+                    margin-top: 20px;
+                    margin-bottom: 0;
+                }
+
+                p{
+                    font-size: 12;
+                    font-weight: 400;
+                    color: v.$grey-text;
+
+                    margin-top: 5px;
+                }
+            }
+        }
+    }
+}
+
+.paragraph{
+    width: 420px;
+    height: fit-content;
+    display: flex;
+    margin-top: 20px;
+
+    .num{
+        display: flex;
+        .circle{
+            width: 100px;
+            height: 100px;
+            border-radius: 50px;
+            border: 2px solid v.$yellow;
+            background-color: v.$grey-light;
+            text-align: center;
+
+            img{
+                margin-top: 20px;
+                display: inline-block;
+                width: 60px;
+                height: 60px;
+            }
+
+        }
+        .number{
+            margin-left: -25px;
+            width: 24px;
+            height: 24px;
+            border-radius: 24px;
+            border: 2px solid v.$yellow;
+            background-color: v.$white;
+            text-align: center;
+            p{
+                margin-top: 2px;
+                font-weight: 600;
+                color: v.$black;
+            }
+        }
+    }
+
+    .txt{
+        margin-left: 10px;
+    }
+}

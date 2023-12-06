@@ -1,0 +1,127 @@
+@use "../../utils/style/vars" as v;
+
+.btn{
+    margin-top: auto;
+    margin-bottom: 0;
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+
+    border: 2px solid transparent;
+    border-radius: 100px;
+    padding: 0;
+    background: rgba(0, 0, 0, 0);
+    border: 2px solid v.$yellow;
+}
+
+.btn:hover{
+    cursor: pointer;
+    background:
+        v.$gradient padding-box,
+        linear-gradient(white, white) border-box;
+}
+
+.btn_dark{
+    margin-top: auto;
+    margin-bottom: 0;
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+
+    border: 2px solid transparent;
+    border-radius: 100px;
+    padding: 0;
+    background: rgba(0, 0, 0, 0);
+    border: 2px solid v.$yellow;
+}
+.btn_dark:hover{
+    cursor: pointer;
+    color: v.$black;
+    background:
+        v.$gradient padding-box,
+        linear-gradient(white, white) border-box;
+}
+
+.btn_fill{
+    margin-top: auto;
+    margin-bottom: 0;
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+
+    border: 2px solid transparent;
+    border-radius: 100px;
+    padding: 0;
+    background:
+        v.$gradient padding-box,
+        v.$gradient border-box;    
+}
+
+.btn_fill:hover{
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0);
+    border: 2px solid v.$yellow;
+}
+
+.btn_fill_dark{
+    margin-top: auto;
+    margin-bottom: 0;
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+
+    color: v.$black;
+    border: 2px solid transparent;
+    border-radius: 100px;
+    padding: 0;
+    background:
+        v.$gradient padding-box,
+        v.$gradient border-box;    
+}
+
+.btn_fill_dark:hover{
+    cursor: pointer;
+    color: v.$white;
+    background: rgba(0, 0, 0, 0);
+    border: 2px solid v.$yellow;
+}
+
+.btn_yellow{
+    margin-top: auto;
+    margin-bottom: 0;
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+
+    border: 2px solid transparent;
+    border-radius: 100px;
+    padding: 0;
+    background-color: v.$yellow; 
+}
+
+.btn_yellow:hover{
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0);
+    border: 2px solid v.$yellow;
+}
+
+.btn_yellow_dark{
+    margin-top: auto;
+    margin-bottom: 0;
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    color: v.$black;
+
+    border: 2px solid transparent;
+    border-radius: 100px;
+    padding: 0;
+    background-color: v.$yellow; 
+}
+
+.btn_yellow_dark:hover{
+    cursor: pointer;
+    color: v.$white;
+    background: rgba(0, 0, 0, 0);
+    border: 2px solid v.$yellow;
+}

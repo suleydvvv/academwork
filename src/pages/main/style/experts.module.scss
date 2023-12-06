@@ -1,0 +1,134 @@
+@use "../../../utils/style/vars" as v;
+
+.container{
+    width: 100%;
+    height: fit-content;
+    padding-top: 130px;
+    padding-bottom: 130px;
+    background-color: rgba(black, 0.04);
+    .content{
+        width: 1200px;
+        margin: 0 auto;
+
+        font-family: "Montserrat";
+    }
+}
+
+.title_content{
+    display: flex;
+    justify-content: space-between;
+    .title{
+        h3{
+            font-size: 12px;
+            font-weight: 500;
+            color: v.$grey-text;
+            text-transform: uppercase;
+        }
+        h1{
+            font-size: 40px;
+            font-weight: 800;
+        }
+        .line{
+            width: 40px;
+            height: 3px;
+            background-color: v.$yellow;
+        }
+    }
+
+    .right_txt{
+        margin-top: auto;
+        margin-bottom: 30px;
+        width: 550px;
+        display: flex;
+
+        h5{
+            font-size: 16px;
+            font-weight: 600;
+            margin: 0;
+            margin-left: 10px;
+        }
+        h6{
+            font-size: 16px;
+            font-weight: 300;
+            margin: 0;
+        }
+    }
+}
+
+.experts{
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.btns{
+    width: 500px;
+    margin: 70px auto 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+
+    .btn{
+        width: 240px;
+        height: 56px;
+        text-align: center;
+
+        p{
+            margin-top: 18px;
+            font-size: 14px;
+            font-weight: 600;
+        }
+    }
+}
+
+.expert{
+    width: 211px;
+    height: 286px;
+
+    display: block;
+
+    font-family: "Montserrat";
+    text-align: center;
+
+
+    img{
+        border-radius: 100px;
+        border: 10px solid v.$white;
+        box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+    }
+    h2{
+        margin: 20px 0 0 0;
+        font-size: 16px;
+        font-weight: 600;
+    }
+    h3{
+        margin: 0;
+        font-size: 12px;
+        font-weight: 400;
+        color: v.$red;
+        text-decoration: underline;
+    }
+    
+    .raiting{
+        margin-top: 15px;
+
+        p{
+            margin-top: 0;
+            font-size: 12px;
+            font-weight: 500;
+        }
+    }
+
+    .expert_stats{
+        color: v.$grey-text;
+        display: flex;
+        justify-content: space-between;
+        
+        h4{
+            margin-top: 0;
+            font-size: 14px;
+            font-weight: 500;
+        }
+    }
+}
+

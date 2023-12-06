@@ -1,24 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+
+import {Main, PartnerProgramm} from "./pages";
+
+import style from "./utils/style/theme.module.scss"
+import { useSelector } from 'react-redux';
+import { AboutProject } from './pages/about_project/about_project';
 
 function App() {
+  const Theme = useSelector(state => state.selected_theme)
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <div className = {(Theme === "light") ? style.app_light: style.app_dark}>
+        <Routes>
+          <Route path='*' element = {<h1>В разработке...</h1>} />
+          <Route path='/' element = {<Main/>} />
+          <Route path='/partner-programm' element = {<PartnerProgramm/>} />
+          <Route path='/about-project' element = {<AboutProject/>} />
+        </Routes>
+      </div>
+    </BrowserRouter>
+    
   );
 }
 
