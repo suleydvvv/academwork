@@ -16,7 +16,7 @@ const PartnerProgramm = () =>{
             <Conditions/>
             <Recomedations/>
             <Reviews/>
-            <Footer/>
+            <Footer orangeBox={true}/>
         </div>
     )
 }

@@ -21,7 +21,7 @@ const Main = () =>{
             <HowWeWroking/>
             <LastOrders/>
             <Reviews/>
-            <Footer/>
+            <Footer orangeBox={true}/>
         </div>
         
     )

@@ -1,0 +1,110 @@
+@use "../../../utils/style/vars" as v;
+
+.window{
+    font-family: "Montserrat";
+    padding-top: 30px;
+    h1{
+        margin-top: 0;
+        font-size: 20px;
+        font-weight: 600;
+        text-align: center;
+    }
+
+    h3{
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    h4{
+        width: fit-content;
+        margin: 20px auto;
+        color: v.$red;
+        font-size: 12px;
+        font-weight: 600;
+
+        cursor: pointer;
+    }
+
+    h4:hover{
+        text-decoration: underline;
+    }
+
+    
+
+    .content{
+        padding: 0 40px;
+        margin-top: 30px;
+        display: flex;
+
+        .imgs{
+           margin-right: 30px;
+            .img_active{
+                text-align: center;
+                display: block;
+
+            }
+
+            .img_inactive{
+                text-align: center;
+                display: block;
+                opacity: 0.6;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.inputs{
+    input{
+        margin-bottom: 10px;
+        display: block;
+        width: 260px;
+        height: 20px;
+        padding: 20px;
+        
+        border-radius: 10px;
+        border: 1px solid v.$grey-text;
+        background-color: v.$grey-light;
+        font-family: "Montserrat";
+        font-size: 14px;
+        font-weight: 400;
+    }
+}
+
+.btn{
+    width: fit-content;
+    margin: 20px auto;
+    p{
+        text-align: center;
+        width: 200px;
+        margin: 20px auto;
+
+        font-size: 14px;
+        font-weight: 900;
+    }
+}
+
+.orange{
+    width: 100%;
+    height: 60px;
+    padding-top: 20px;
+    background-color: v.$red;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+    color: v.$white;
+    text-align: center;
+    h5{
+        font-size: 12px;
+        font-weight: 300;
+        margin: 0;
+    }
+    h6{
+        font-size: 14px;
+        font-weight: 600;
+        margin-top: 5px;
+        margin-bottom: 0;
+
+        cursor: pointer;
+    }
+}

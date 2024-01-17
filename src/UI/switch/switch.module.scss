@@ -1,0 +1,47 @@
+@use "/src/utils/style/vars" as v;
+
+.back_inactive{
+    width: 36px;
+    height: 16px;
+    border: 2px solid v.$grey-text;
+    
+    border-radius: 20px;
+    background-color: v.$grey-text;
+
+    cursor: pointer;
+
+    transition: all linear 0.3s;
+
+    .circle{
+        width: 16px;
+        height: 16px;
+        border-radius: 16px;
+    
+        background-color: v.$white;
+        transition: all linear 0.3s;
+    }
+}
+
+.back_active{
+    width: 36px;
+    height: 16px;
+    border: 2px solid v.$yellow;
+    
+    border-radius: 20px;
+    background-color: v.$yellow;
+
+    cursor: pointer;
+
+    transition: all linear 0.3s;
+
+    .circle{
+        transform:translateX(20px);
+        width: 16px;
+        height: 16px;
+        border-radius: 16px;
+    
+        background-color: v.$white;
+        transition: all linear 0.3s;
+    }
+}
+

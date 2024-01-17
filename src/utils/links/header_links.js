@@ -5,7 +5,7 @@ const Links = [
     },
     {
         path: "/about-project",
-        text: "О пректе"
+        text: "О проекте"
     },
     {
         path: "/experts",
@@ -31,7 +31,7 @@ const LinksForAuth = [
         text: "Главная"
     },
     {
-        path: "/orders",
+        path: "/order-library",
         text: "Библиотека заказов"
     },
     {

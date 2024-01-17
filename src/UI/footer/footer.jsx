@@ -11,7 +11,7 @@ import { useSelector } from "react-redux"
 import { useNavigate } from "react-router-dom";
 import { popular_services, about_project, for_customers } from "../../utils/links/footer_links"
 
-const Footer = () =>{
+const Footer = ({orangeBox}) =>{
     const theme = useSelector(state => state.selected_theme)
     const navigate = useNavigate()
 
@@ -34,9 +34,9 @@ const Footer = () =>{
 
     return(
         <div>
-            <OrangeBox title="Нужна помощь с решением нестандартной задачи?"
+            {orangeBox && <OrangeBox title="Нужна помощь с решением нестандартной задачи?"
                        subtitle="Просто оставьте заявку и наши специалисты Вам помогут"
-                       link={link_orBox_btn}/>
+                       link={link_orBox_btn}/>}
             <div className={style.footer_container}>
                 <div className={style.content}>
                     <div className={style.contacts}>

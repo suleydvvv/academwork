@@ -3,6 +3,8 @@ import style from "../../style/body.module.scss"
 import main_offer from "../../imgs/main_offer.svg"
 
 import {Btn} from "../../../../UI"
+import { useDispatch } from "react-redux"
+import { setAsCustomer, setAsExpert, setRegActive } from "../../../../store/reducers/modalSlice"
 
 const Stat = ({num, title, txt}) =>{
     return(
@@ -17,6 +19,18 @@ const Stat = ({num, title, txt}) =>{
 }
 
 const Body = () =>{
+    const dispatch = useDispatch()
+
+    function pushTask(){
+        dispatch(setRegActive(true))
+        dispatch(setAsExpert(false))
+        dispatch(setAsCustomer(true))
+    }
+    function becomeExpert(){
+        dispatch(setRegActive(true))
+        dispatch(setAsCustomer(false))
+        dispatch(setAsExpert(true))
+    }
     return(
         <div className={style.container}>
             <div className={style.content}>
@@ -29,10 +43,10 @@ const Body = () =>{
                         
                         <div className={style.btns_container}>
                             <Btn fill="fill_gradient">
-                                <div className={style.btn}><p>Разместить задание</p></div>
+                                <div className={style.btn} onClick={()=>pushTask()}><p>Разместить задание</p></div>
                             </Btn>
                             <Btn fill="not_fill">
-                                <div className={style.btn}><p>Стать экспертом</p></div>
+                                <div className={style.btn} onClick={()=>becomeExpert()}><p>Стать экспертом</p></div>
                             </Btn>
                         </div>
                     </div>

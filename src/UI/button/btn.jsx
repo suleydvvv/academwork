@@ -2,7 +2,7 @@ import { useSelector } from "react-redux";
 import style from "./btn.module.scss"
 
 const Btn = ({children, fill}) =>{
-    const theme = useSelector(state => state.selected_theme)
+    const theme = useSelector(state => state.user.selected_theme)
     function switchClass(fill) {
         switch(theme){
             case "light":

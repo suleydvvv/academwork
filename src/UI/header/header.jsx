@@ -16,9 +16,9 @@ import { setTheme } from "../../store/reducers/userSlice";
 import { Links, LinksForAuth } from "../../utils/links/header_links";
 
 const Header = () =>{
-    const isAuth = useSelector(state => state.isAuth)
-    const user = useSelector(state => state.user)
-    const theme = useSelector(state => state.selected_theme)
+    const isAuth = useSelector(state => state.user.isAuth)
+    const user = useSelector(state => state.user.user)
+    const theme = useSelector(state => state.user.selected_theme)
     const dispatch = useDispatch()
     const navigate = useNavigate()
     let nav_links = []

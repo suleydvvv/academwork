@@ -16,7 +16,7 @@ const AboutProject = () =>{
             <Body/>
             <Advantages/>
             <Join/>
-            <Footer/>
+            <Footer orangeBox={true}/>
         </div>
     )
 }
